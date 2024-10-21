@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: gh status
+        run: gh repo list
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
