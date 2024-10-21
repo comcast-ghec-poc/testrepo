@@ -29,7 +29,7 @@ jobs:
       - name: Run a one-line script
         run: |
              gh repo list
-             gh api /repos/comcast-ghec-poc
+             gh api https://api.github.com/repos/comcast-ghec-poc
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
