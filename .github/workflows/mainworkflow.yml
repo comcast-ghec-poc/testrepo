@@ -28,6 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: gh repo list
+             gh api /repos/madhusmita65/comcast-ghec-poc
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
