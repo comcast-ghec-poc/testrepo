@@ -28,7 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-             #gh api https://api.github.com/repos/comcast-ghec-poc/test
              gh api https://api.github.com/users/madhusmita65/repos
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
