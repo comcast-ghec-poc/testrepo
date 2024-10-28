@@ -1,0 +1,18 @@
+Testing /Users/madhusmita/Documents/github automation/testrepo ...
+
+ ✗ [High] Hardcoded Secret
+   Path: git_automation.py, line 4
+   Info: Avoid hardcoding values that are meant to be secret. Found a hardcoded string used in here.
+
+
+✔ Test completed
+
+Organization:      madhusmita65-maMYwMK5ABgbfGYARK4Vqs
+Test type:         Static code analysis
+Project path:      /Users/madhusmita/Documents/github automation/testrepo
+
+Summary:
+
+  1 Code issues found
+  1 [High]
+
