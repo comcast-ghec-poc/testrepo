@@ -6,7 +6,7 @@ name: CI
 on:
   pull_request:
     branches:
-      - '*'  # Triggers when a PR is opened for the main branch
+      - 'testworkflow'  # Triggers when a PR is opened for the main branch
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
