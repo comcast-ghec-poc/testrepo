@@ -5,9 +5,10 @@ name: Auto trigger
 on:
   pull_request:
     branches:
-      - dev
+      - dev   # This will trigger when the PR is made *into* the `dev` branch
     types:
       - opened
+      - synchronize  # Triggers also when new commits are pushed to the PR
 
 jobs:
   snyk:
@@ -27,6 +28,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: run command
+    - name: Run command
       run: |
         echo "hello"
