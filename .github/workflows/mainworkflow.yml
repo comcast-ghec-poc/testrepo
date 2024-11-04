@@ -1,11 +1,11 @@
 # .github/workflows/mainworkflow.yml
 
-name: Auto trigger when a PR is created in dev branch
+name: Auto trigger 
 
 on:
   pull_request:
     branches:
-      - '*'
+      - dev
 
 jobs:
   snyk:
@@ -27,4 +27,4 @@ jobs:
 
     - name: run command
       run: |
-        cat testfile.py
+        echo "hello"
