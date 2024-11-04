@@ -4,14 +4,12 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches:
+      - main  # Triggers when code is pushed to the main branch
   pull_request:
-    branches: [ "master" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - testworkflow  # Triggers when a PR is opened for the main branch
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
