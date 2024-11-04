@@ -4,9 +4,6 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  push:
-    branches:
-      - main  # Triggers when code is pushed to the main branch
   pull_request:
     branches:
       - testworkflow  # Triggers when a PR is opened for the main branch
