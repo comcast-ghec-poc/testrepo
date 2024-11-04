@@ -1,6 +1,6 @@
-# .github/workflows/snyk.yml
+# .github/workflows/mainworkflow.yml
 
-name: Snyk Security Scan
+name: Auto trigger when a PR is created in dev branch
 
 on:
   pull_request:
@@ -25,9 +25,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: Run Snyk to check for vulnerabilities
-      uses: snyk/actions/python@master
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-      with:
-        args: test
+    - name: run command
+      run: |
+        cat testfile.py
